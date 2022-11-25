@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "name": "Argentina",
+      "flag": "https://newsapi.org/images/flags/ar.svg",
+      "code": "ar"
+    },
+    {
+      "name": "Australia",
+      "flag": "https://newsapi.org/images/flags/au.svg",
+      "code": "au"
+    },
+    {
+      "name": "Brazil",
+      "flag": "https://newsapi.org/images/flags/br.svg",
+      "code": "br"
+    },
+    {
+      "name": "Canada",
+      "flag": "https://newsapi.org/images/flags/ca.svg",
+      "code": "ca"
+    },
+    {
+      "name": "China",
+      "flag": "https://newsapi.org/images/flags/cn.svg",
+      "code": "cn"
+    },
+    {
+      "name": "France",
+      "flag": "https://newsapi.org/images/flags/fr.svg",
+      "code": "fr"
+    },
+    {
+      "name": "Germany",
+      "flag": "https://newsapi.org/images/flags/de.svg",
+      "code": "de"
+    },
+    {
+      "name": "India",
+      "flag": "https://newsapi.org/images/flags/in.svg",
+      "code": "in"
+    },
+    {
+      "name": "Israel",
+      "flag": "https://newsapi.org/images/flags/il.svg",
+      "code": "il"
+    },
+    {
+      "name": "Italy",
+      "flag": "https://newsapi.org/images/flags/it.svg",
+      "code": "it"
+    },
+    {
+      "name": "Japan",
+      "flag": "https://newsapi.org/images/flags/jp.svg",
+      "code": "jp"
+    },
+    {
+      "name": "Malaysia",
+      "flag": "https://newsapi.org/images/flags/my.svg",
+      "code": "my"
+    },
+    {
+      "name": "Netherlands",
+      "flag": "https://newsapi.org/images/flags/nl.svg",
+      "code": "nl"
+    },
+    {
+      "name": "New Zealand",
+      "flag": "https://newsapi.org/images/flags/nz.svg",
+      "code": "nz"
+    },
+    {
+      "name": "Nigeria",
+      "flag": "https://newsapi.org/images/flags/br.svg",
+      "code": "ng"
+    },
+    {
+      "name": "Russia",
+      "flag": "https://newsapi.org/images/flags/ru.svg",
+      "code": "ru"
+    },
+    {
+      "name": "Saudi Arabia",
+      "flag": "https://newsapi.org/images/flags/sa.svg",
+      "code": "sa"
+    },
+    {
+      "name": "Singapore",
+      "flag": "https://newsapi.org/images/flags/sg.svg",
+      "code": "sg"
+    },
+    {
+      "name": "South Africa",
+      "flag": "https://newsapi.org/images/flags/za.svg",
+      "code": "za"
+    },
+    {
+      "name": "Turkey",
+      "flag": "https://newsapi.org/images/flags/tr.svg",
+      "code": "tr"
+    },
+    {
+      "name": "UAE",
+      "flag": "https://newsapi.org/images/flags/ae.svg",
+      "code": "ae"
+    },
+    {
+      "name": "United Kingdom",
+      "flag": "https://newsapi.org/images/flags/gb.svg",
+      "code": "gb"
+    },
+    {
+      "name": "United States",
+      "flag": "https://newsapi.org/images/flags/us.svg",
+      "code": "us"
+    }
+  ]
+}
