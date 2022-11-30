@@ -1,13 +1,8 @@
 
-import 'package:flutter/material.dart';
-
 abstract class Strings {
 
-  static Strings? of(BuildContext context) {
-    return Localizations.of<Strings>(context, Strings);
-  }
-
   String get newsHome;
+  String get newsList;
   String get newsDetails;
   String get newsAuthorTitle;
   String get noNewsFound;
@@ -21,4 +16,9 @@ abstract class Strings {
   String get subMenuScience;
   String get subMenuSports;
   String get subMenuTechnology;
+  String get language;
+  String get lngEnglish;
+  String get lngHindi;
+  String get textReadMore;
+  String get textNoAuthor;
 }

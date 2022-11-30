@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:news_flutter_block/data/remote/app_exception.dart';
@@ -65,6 +66,35 @@ class NetworkApiService extends BaseApiService {
             'Error occured while communication with server' +
                 ' with status code : ${response.statusCode}');
     }
+  }
+
+  @override
+  Future getAllNewsPaginationResponse(String url, String countryCode, int pageSize, int page) async {
+    dynamic responseJson;
+    try {
+        var query = {
+          "apiKey": apiKey,
+          "country": countryCode,
+          "pageSize": pageSize.toString(),
+          "page": page.toString()
+        };
+        var uri = Uri.http(baseUrl, url, query);
+        if (kDebugMode) {
+          print(uri.toString());
+          print(uri.queryParametersAll.toString());
+        }
+        final response = await http.get(uri);
+        responseJson = returnResponse(response);
+    } catch(e) {
+      if(e is AppException) {
+        throw FetchDataException(e.toString());
+      } else if(e is SocketException){
+        throw FetchDataException("Socket Exception: ${e.toString()}");
+      } else {
+        throw FetchDataException("Something went wrong: ${e.toString()}");
+      }
+    }
+    return responseJson;
   }
 
 }

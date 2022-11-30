@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_flutter_block/block/news/news_bloc.dart';
 import 'package:news_flutter_block/data/model/news_list/news_list_main.dart';
+import 'package:news_flutter_block/main.dart';
 import 'package:news_flutter_block/res/app_context_extension.dart';
 import 'package:news_flutter_block/ui/country_list/country_list_center_screen.dart';
 import 'package:news_flutter_block/ui/navigation_drawer/navigation_action.dart';
 import 'package:news_flutter_block/ui/navigation_drawer/navigation_drawer.dart';
 import 'package:news_flutter_block/ui/news_detail/news_detail_screen.dart';
+import 'package:news_flutter_block/ui/news_detail/news_detail_slider_screen.dart';
+import 'package:news_flutter_block/ui/news_home/news_list_pagination_screen.dart';
 import 'package:news_flutter_block/ui/utils/utility.dart';
 import 'package:news_flutter_block/ui/widget/app_widgets.dart';
 
@@ -24,6 +27,7 @@ class _NewsListScreenState extends State<NewsListScreen> {
   late NewsBloc _newsBloc;
   String selectedCountries = "in";
   String newsType = "";
+  List<Article> _newsList = [];
 
   @override
   void initState() {
@@ -89,34 +93,50 @@ class _NewsListScreenState extends State<NewsListScreen> {
           case NavigationAction.github:
             Utility.launchURL("https://github.com/maraj91");
             break;
+          case NavigationAction.allNewsSlider:
+            if(_newsList.isNotEmpty) {
+              Navigator.of(context, rootNavigator: true).pushNamed(NewsDetailSliderScreen.id,arguments: _newsList);
+            }
+            break;
+          case NavigationAction.lngEnglish:
+            MyApp.setLocale(context, const Locale("en"));
+            break;
+          case NavigationAction.lngHindi:
+            MyApp.setLocale(context, const Locale("hi"));
+            break;
+          case NavigationAction.newsPagination:
+            Navigator.of(context, rootNavigator: true).pushNamed(NewsListPaginationScreen.id);
+            break;
         }},
       ),
       body: BlocConsumer<NewsBloc, NewsState>(
         builder: (context, state) {
+          if (kDebugMode) {
+            print("${NewsListScreen.id} -->> $state");
+          }
           if (state is NewsPageLoading) {
             return AppWidgets.getCenterLoadingView();
           } else if (state is NewsPageLoaded) {
             if (state.data.articles.isNotEmpty == true) {
-              return _newsListView(state.data.articles);
+              _newsList = state.data.articles;
             } else {
               return AppWidgets.getBuildNoResult(context, context.resources.strings?.noNewsFound ?? "");
             }
           } else if (state is NewsPageError) {
             return AppWidgets.getBuildNoResult(context, state.errorMessage);
-          } else {
-            return AppWidgets.getBuildNoResult(context, context.resources.strings?.noNewsFound ?? "");
           }
+          return _newsListView();
         },
         listener: (context, state) {},
       ),
     );
   }
 
-  Widget _newsListView(List<Article> articles) {
+  Widget _newsListView() {
     return ListView.builder(
-      itemCount: articles.length,
+      itemCount: _newsList.length,
       itemBuilder: (context, index) {
-        return _newsListItems(articles[index]);
+        return _newsListItems(_newsList[index]);
       },
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:news_flutter_block/res/strings/english_strings.dart';
+import 'package:news_flutter_block/res/drawable/app_drawable.dart';
 import 'package:news_flutter_block/res/style/app_style.dart';
 import 'colors/app_colors.dart';
 import 'dimentions/app_dimension.dart';
@@ -11,7 +11,7 @@ class Resources {
   Resources(this._context);
 
   Strings? get strings {
-    return EnglishStrings();
+    return Localizations.of<Strings>(_context, Strings);
   }
 
   AppColors get color {
@@ -24,6 +24,10 @@ class Resources {
 
   AppStyle get style {
     return AppStyle();
+  }
+
+  AppDrawable get drawable {
+    return AppDrawable();
   }
 
   static Resources of(BuildContext context){

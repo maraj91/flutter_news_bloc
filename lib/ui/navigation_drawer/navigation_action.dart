@@ -2,6 +2,7 @@ enum NavigationAction {
   country,
   about,
   allNews,
+  allNewsSlider,
   business,
   entertainment,
   health,
@@ -10,5 +11,8 @@ enum NavigationAction {
   technology,
   medium,
   linkedIn,
-  github
+  github,
+  lngEnglish,
+  lngHindi,
+  newsPagination,
 }

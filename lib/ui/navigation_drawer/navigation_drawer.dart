@@ -18,8 +18,11 @@ class NavigationDrawer extends StatelessWidget {
             child: ListView(
               children: <Widget>[
                 _createDrawerHeader(context),
+                _createDrawerBodyItem(context, icon: Icons.list_alt_outlined, text: context.resources.strings!.newsList, onTap: countryMenuClick, action: NavigationAction.newsPagination),
                 _createDrawerBodyItem(context, icon: Icons.language, text: context.resources.strings!.menuCountry, onTap: countryMenuClick, action: NavigationAction.country),
+                _createDrawerBodyItem(context, icon: Icons.newspaper_sharp, text: context.resources.strings!.newsHome, onTap: countryMenuClick, action: NavigationAction.allNewsSlider),
                 _expendedDrawerBody(context, onTap: countryMenuClick),
+                _expendedLanguageDrawerBody(context, onTap: countryMenuClick),
                 _createDrawerBodyItem(context, icon: Icons.info_outlined, text: context.resources.strings!.menuAboutUs, onTap: countryMenuClick,action: NavigationAction.about),
               ],
             ),
@@ -34,19 +37,19 @@ class NavigationDrawer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   GestureDetector(
-                    child: const ImageIcon(AssetImage("assets/images/icons/ic_medium.png")),
+                    child: ImageIcon(AssetImage(context.resources.drawable.icMedium)),
                     onTap: () {
                       countryMenuClick(NavigationAction.medium);
                     },
                   ),
                   GestureDetector(
-                    child: const ImageIcon(AssetImage("assets/images/icons/ic_linkedin.png")),
+                    child: ImageIcon(AssetImage(context.resources.drawable.icLinkedIn)),
                     onTap: () {
                       countryMenuClick(NavigationAction.linkedIn);
                     },
                   ),
                   GestureDetector(
-                    child: const ImageIcon(AssetImage("assets/images/icons/ic_github.png")),
+                    child: ImageIcon(AssetImage(context.resources.drawable.icGithub)),
                     onTap: () {
                       countryMenuClick(NavigationAction.github);
                     },
@@ -64,10 +67,10 @@ class NavigationDrawer extends StatelessWidget {
     return DrawerHeader(
         margin: EdgeInsets.zero,
         padding: EdgeInsets.zero,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
             image: DecorationImage(
                 fit: BoxFit.fitWidth,
-                image: AssetImage('assets/images/bg_drawer_header.jpeg')
+                image: AssetImage(context.resources.drawable.imgBgDrawerHeader)
             )
         ),
         child: Stack(
@@ -131,6 +134,22 @@ class NavigationDrawer extends StatelessWidget {
         _createExpandDrawerChildBodyItem(context, text: context.resources.strings!.subMenuScience, onTap: countryMenuClick, action: NavigationAction.science),
         _createExpandDrawerChildBodyItem(context, text: context.resources.strings!.subMenuSports, onTap: countryMenuClick, action: NavigationAction.sports),
         _createExpandDrawerChildBodyItem(context, text: context.resources.strings!.subMenuTechnology, onTap: countryMenuClick, action: NavigationAction.technology),
+      ],
+    );
+  }
+
+  Widget _expendedLanguageDrawerBody(BuildContext context, {required Function(NavigationAction) onTap}) {
+    return ExpansionTile(
+      //Transform used to remove space between title & icon
+      title: Transform(
+        transform: Matrix4.translationValues(-24, 0.0, 0.0),
+        child: Text(context.resources.strings!.language, style: context.resources.style.drawerTextStyle,),
+      ),
+      leading: const Icon(Icons.list_rounded), //add icon
+      childrenPadding: const EdgeInsets.only(left:34), //children padding
+      children: [
+        _createExpandDrawerChildBodyItem(context, text: context.resources.strings!.lngEnglish, onTap: countryMenuClick, action: NavigationAction.lngEnglish),
+        _createExpandDrawerChildBodyItem(context, text: context.resources.strings!.lngHindi, onTap: countryMenuClick, action: NavigationAction.lngHindi),
       ],
     );
   }

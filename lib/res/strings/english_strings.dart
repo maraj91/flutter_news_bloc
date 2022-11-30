@@ -45,4 +45,22 @@ class EnglishStrings extends Strings {
   @override
   String get subMenuTechnology => "Technology";
 
+  @override
+  String get language => "Language";
+
+  @override
+  String get lngHindi => "Hindi";
+
+  @override
+  String get lngEnglish => "English";
+
+  @override
+  String get textReadMore => "-Read more";
+
+  @override
+  String get textNoAuthor => "Unknown";
+
+  @override
+  String get newsList => "All News";
+
 }
