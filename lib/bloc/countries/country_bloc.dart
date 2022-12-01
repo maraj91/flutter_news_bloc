@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:news_flutter_block/data/model/countries/CountryListMain.dart';
-import 'package:news_flutter_block/repository/news/news_repo_imp.dart';
+import '../../data/model/countries/CountryListMain.dart';
+import '../../repository/news/news_repo_imp.dart';
 
 part 'country_event.dart';
 

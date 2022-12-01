@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_flutter_block/block/countries/country_bloc.dart';
-import 'package:news_flutter_block/block/news/news_bloc.dart';
-import 'package:news_flutter_block/data/model/news_list/news_list_main.dart';
-import 'package:news_flutter_block/ui/country_list/country_list_center_screen.dart';
-import 'package:news_flutter_block/ui/country_list/country_list_screen.dart';
-import 'package:news_flutter_block/ui/news_detail/news_detail_screen.dart';
-import 'package:news_flutter_block/ui/news_detail/news_detail_slider_screen.dart';
-import 'package:news_flutter_block/ui/news_home/news_list_pagination_screen.dart';
-import 'package:news_flutter_block/ui/news_home/news_list_screen.dart';
+import '../../bloc/countries/country_bloc.dart';
+import '../../bloc/news/news_bloc.dart';
+import '../../data/model/news_list/news_list_main.dart';
+import '../../ui/country_list/country_list_center_screen.dart';
+import '../../ui/country_list/country_list_screen.dart';
+import '../../ui/news_detail/news_detail_screen.dart';
+import '../../ui/news_detail/news_detail_slider_screen.dart';
+import '../../ui/news_home/news_list_pagination_screen.dart';
+import '../../ui/news_home/news_list_screen.dart';
 
 class RouteGenerator {
   // final NewsBloc _newsBloc = NewsBloc();

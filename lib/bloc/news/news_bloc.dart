@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/data/model/news_list/news_list_main.dart';
-import 'package:news_flutter_block/repository/news/news_repo_imp.dart';
+import '../../data/model/news_list/news_list_main.dart';
+import '../../repository/news/news_repo_imp.dart';
 
 part 'news_event.dart';
 part 'news_state.dart';

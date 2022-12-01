@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
+import '../../res/app_context_extension.dart';
 
 class AppWidgets {
   static getAppBar(BuildContext context, String title) {

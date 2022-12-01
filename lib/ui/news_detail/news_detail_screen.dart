@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/data/model/news_list/news_list_main.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
-import 'package:news_flutter_block/ui/utils/utility.dart';
+import '../../data/model/news_list/news_list_main.dart';
+import '../../res/app_context_extension.dart';
+import '../../ui/utils/utility.dart';
 
 import '../widget/app_widgets.dart';
 

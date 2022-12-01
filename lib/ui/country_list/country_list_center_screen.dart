@@ -2,10 +2,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:news_flutter_block/block/countries/country_bloc.dart';
-import 'package:news_flutter_block/data/model/countries/CountryListMain.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
-import 'package:news_flutter_block/ui/widget/app_widgets.dart';
+import '../../bloc/countries/country_bloc.dart';
+import '../../data/model/countries/CountryListMain.dart';
+import '../../res/app_context_extension.dart';
+import '../../ui/widget/app_widgets.dart';
 
 class CountryListCenterScreen extends StatefulWidget {
   static const String id = "country_list_center_screen";

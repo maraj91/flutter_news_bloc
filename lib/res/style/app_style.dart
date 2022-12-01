@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/res/colors/app_colors.dart';
-import 'package:news_flutter_block/res/dimentions/app_dimension.dart';
+import '../../res/colors/app_colors.dart';
+import '../../res/dimentions/app_dimension.dart';
 
 class AppStyle {
 

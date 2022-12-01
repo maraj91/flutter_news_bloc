@@ -1,8 +1,8 @@
 import 'package:flutter/services.dart';
-import 'package:news_flutter_block/data/remote/api_endPoints.dart';
-import 'package:news_flutter_block/data/remote/base_api_service.dart';
-import 'package:news_flutter_block/data/remote/netword_api_service.dart';
-import 'package:news_flutter_block/repository/news/news_repo.dart';
+import '../../data/remote/api_endPoints.dart';
+import '../../data/remote/base_api_service.dart';
+import '../../data/remote/netword_api_service.dart';
+import '../../repository/news/news_repo.dart';
 
 class NewsRepoImp extends NewsRepo {
 

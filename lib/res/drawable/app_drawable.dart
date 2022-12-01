@@ -1,4 +1,4 @@
-import 'package:news_flutter_block/res/drawable/drawables.dart';
+import '../../res/drawable/drawables.dart';
 
 class AppDrawable extends Drawables {
   @override

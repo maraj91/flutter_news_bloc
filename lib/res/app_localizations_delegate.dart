@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/res/strings/english_strings.dart';
-import 'package:news_flutter_block/res/strings/hindi_strings.dart';
-import 'package:news_flutter_block/res/strings/strings.dart';
+import '../../res/strings/english_strings.dart';
+import '../../res/strings/hindi_strings.dart';
+import '../../res/strings/strings.dart';
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<Strings> {
 

@@ -1,8 +1,8 @@
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
-import 'package:news_flutter_block/res/app_localizations_delegate.dart';
-import 'package:news_flutter_block/routes/route_generator.dart';
-import 'package:news_flutter_block/ui/news_home/news_list_screen.dart';
+import '../../res/app_context_extension.dart';
+import '../../res/app_localizations_delegate.dart';
+import '../../routes/route_generator.dart';
+import '../../ui/news_home/news_list_screen.dart';
 import 'package:flutter/material.dart';
 
 

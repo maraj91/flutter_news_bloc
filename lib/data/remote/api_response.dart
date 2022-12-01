@@ -1,4 +1,4 @@
-import 'package:news_flutter_block/data/remote/status.dart';
+import '../../data/remote/status.dart';
 
 class ApiResponse<T> {
 

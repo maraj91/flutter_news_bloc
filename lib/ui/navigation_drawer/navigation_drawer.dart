@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
-import 'package:news_flutter_block/ui/navigation_drawer/navigation_action.dart';
+import '../../res/app_context_extension.dart';
+import '../../ui/navigation_drawer/navigation_action.dart';
 
 class NavigationDrawer extends StatelessWidget {
 

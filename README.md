@@ -1,4 +1,4 @@
-# news_flutter_block
+# news_flutter_bloc
 
 This project create to understaind the concept of BLOC pattern for the flutter. We have build a news app using a public [NEWS API](https://newsapi.org/)
 

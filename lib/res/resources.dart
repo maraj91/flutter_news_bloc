@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:news_flutter_block/res/drawable/app_drawable.dart';
-import 'package:news_flutter_block/res/style/app_style.dart';
+import '../../res/drawable/app_drawable.dart';
+import '../../res/style/app_style.dart';
 import 'colors/app_colors.dart';
 import 'dimentions/app_dimension.dart';
 import 'strings/strings.dart';

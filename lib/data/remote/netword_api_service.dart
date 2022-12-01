@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart';
-import 'package:news_flutter_block/data/remote/app_exception.dart';
-import 'package:news_flutter_block/data/remote/base_api_service.dart';
+import '../../data/remote/app_exception.dart';
+import '../../data/remote/base_api_service.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkApiService extends BaseApiService {
@@ -63,8 +63,7 @@ class NetworkApiService extends BaseApiService {
       case 500:
       default:
         throw FetchDataException(
-            'Error occured while communication with server' +
-                ' with status code : ${response.statusCode}');
+            'Error occurred while communication with server with status code : ${response.statusCode}');
     }
   }
 

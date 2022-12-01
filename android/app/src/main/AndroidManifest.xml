@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.news_flutter_block">
+    package="com.example.news_flutter_bloc">
    <application
-        android:label="news_flutter_block"
+        android:label="news_flutter_bloc"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
        android:roundIcon="@mipmap/ic_launcher_round">

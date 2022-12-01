@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_flutter_block/block/news/news_bloc.dart';
-import 'package:news_flutter_block/data/model/news_list/news_list_main.dart';
-import 'package:news_flutter_block/res/app_context_extension.dart';
-import 'package:news_flutter_block/ui/news_detail/news_detail_screen.dart';
-import 'package:news_flutter_block/ui/widget/app_widgets.dart';
+import '../../bloc/news/news_bloc.dart';
+import '../../data/model/news_list/news_list_main.dart';
+import '../../res/app_context_extension.dart';
+import '../../ui/news_detail/news_detail_screen.dart';
+import '../../ui/widget/app_widgets.dart';
 
 class NewsListPaginationScreen extends StatefulWidget {
   static const String id = "news_list_pagination_screen";
