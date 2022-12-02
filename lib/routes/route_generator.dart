@@ -11,8 +11,6 @@ import '../../ui/news_home/news_list_pagination_screen.dart';
 import '../../ui/news_home/news_list_screen.dart';
 
 class RouteGenerator {
-  // final NewsBloc _newsBloc = NewsBloc();
-  // final CountryBloc _countryBloc = CountryBloc();
 
   Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;

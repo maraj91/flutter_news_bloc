@@ -1,1 +1,0 @@
-enum Status {apiLoading, apiComplete, apiError }

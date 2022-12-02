@@ -41,8 +41,10 @@ class NetworkApiService extends BaseApiService {
     } catch(e) {
       if(e is AppException) {
         throw FetchDataException(e.toString());
+      } else if(e is SocketException){
+        throw FetchDataException("Socket Exception: ${e.toString()}");
       } else {
-        throw FetchDataException("No Internet Connection: ${e.toString()}");
+        throw FetchDataException("Something went wrong: ${e.toString()}");
       }
     }
     return responseJson;
