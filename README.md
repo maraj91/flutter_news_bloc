@@ -11,32 +11,32 @@ This project create to understaind the concept of BLOC pattern for the flutter. 
 ## Android Output 😀
 
 <div align="center">
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_splash.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_02.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_01.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_03.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_splash.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_02.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_01.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_03.png" width="200px"</img> 
 </div>
 <div align="center">
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_03_1.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_04.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_04_1.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/android_05.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_03_1.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_04.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_04_1.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/android_05.png" width="200px"</img> 
 </div>
 
 
 ## iOS Output 😎
 
 <div align="center">
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_splash.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_02.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_01.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_03.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_splash.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_02.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_01.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_03.png" width="200px"</img> 
 </div>
 <div align="center">
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_03_1.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_04.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_04_1.png" width="200px"</img> 
-    <img src="https://github.com/maraj91/news_flutter_bloc/blob/main/screenshot/ios_05.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_03_1.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_04.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_04_1.png" width="200px"</img> 
+    <img src="https://github.com/maraj91/flutter_news_bloc/blob/master/screenshot/ios_05.png" width="200px"</img> 
 </div>
 
 ## Getting Started
