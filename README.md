@@ -2,6 +2,8 @@
 
 This project create to understaind the concept of BLOC pattern for the flutter. We have build a news app using a public [NEWS API](https://newsapi.org/)
 
+For more details you can read out [Here 👈🏻](https://marajhussain.medium.com/flutter-bloc-clean-architecture-best-practice-news-apis-3adb0e2012cc)
+
 ## Built With 🛠
 - [HTTP](https://pub.dev/packages/http) - A composable, Future-based library for making HTTP requests.
 - [Flutter BLOC](https://pub.dev/packages/flutter_bloc) - Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.
